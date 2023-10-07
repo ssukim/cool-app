@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@/styles/globals.css';
+import { GlobalNav } from '@/ui/global-nav';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="[color-scheme:dark]">
-      <body className="bg-gray-1100 overflow-y-scroll pb-36">{children}</body>
+      <body className="bg-gray-1100 overflow-y-scroll pb-36">
+        <GlobalNav />
+        {children}
+      </body>
     </html>
   );
 }
