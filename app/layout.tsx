@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="[color-scheme:dark]">
-      <body className="bg-gray-1100 overflow-y-scroll pb-36">
+      <body className="flex bg-gray-1100 h-full">
         <GlobalNav />
         {children}
       </body>
