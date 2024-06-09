@@ -11,7 +11,6 @@ export default function Page() {
 
       if (response?.result === 'false') {
         console.log('error!');
-        console.log('🚀 ~ file: page.tsx:11 ~ data:', response?.message);
       } else {
         console.log('🚀 ~ file: page.tsx:11 ~ data:', response.body);
       }
